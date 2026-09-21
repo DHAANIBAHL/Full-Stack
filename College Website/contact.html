@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Spring Green College</title>
+  <meta name="description" content="Contact Spring Green College's admissions office, schedule a campus visit, or send a question.">
+
+  <meta property="og:title" content="Contact — Spring Green College">
+  <meta property="og:description" content="Reach admissions, schedule a visit, or send a question.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    <p class="toast-message" id="toast-message"></p>
+    <button type="button" class="toast-close" id="toast-close" aria-label="Dismiss notification">&times;</button>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Spring Green College</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in touch.</h1>
+        <p>Questions about admissions, a visit, or a specific program — send a note and the right office will follow up.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+            <span class="field-error" id="name-error"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+            <span class="field-error" id="email-error"></span>
+          </div>
+          <div class="form-field">
+            <label for="reason">Reason for contact</label>
+            <select id="reason" name="reason">
+              <option>Admissions</option>
+              <option>Financial aid</option>
+              <option>Campus visit</option>
+              <option>A specific program</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" aria-describedby="message-error"></textarea>
+            <span class="field-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Other ways to reach us</h2>
+
+          <div class="info-block">
+            <h3>Admissions office</h3>
+            <p>Open weekdays, 9am–5pm</p>
+            <a href="mailto:admissions@springgreen.edu">admissions@springgreen.edu</a><br>
+            <a href="tel:+15551234567">(555) 123-4567</a>
+          </div>
+
+          <div class="info-block">
+            <h3>Campus visits</h3>
+            <p>Guided tours run Tuesday through Saturday. Group visits by request.</p>
+            <a href="mailto:visits@springgreen.edu">visits@springgreen.edu</a>
+          </div>
+
+          <div class="info-block">
+            <h3>Mailing address</h3>
+            <p>Spring Green College<br>14 Harbor Ridge Road<br>Port Ellery</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="logo">Spring Green College</p>
+        <p class="footer-address">14 Harbor Ridge Road, Port Ellery</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <p class="footer-accreditation">Accredited by the New England Commission of Higher Education</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Spring Green College on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Spring Green College on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="7.5" y1="10" x2="7.5" y2="17"/><circle cx="7.5" cy="6.8" r="0.6" fill="currentColor" stroke="none"/><path d="M11.5 17v-4.2c0-1.4 1-2.3 2.2-2.3s2 .9 2 2.3V17"/></svg>
+          </a>
+          <a href="#" aria-label="Spring Green College on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10.5 9.7v4.6l4-2.3z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Spring Green College</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+  <script>
+    (function () {
+      const form = document.getElementById('contact-form');
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toast-message');
+      const toastClose = document.getElementById('toast-close');
+      let toastTimer = null;
+
+      function showToast(message, type) {
+        toastMessage.textContent = message;
+        toast.className = 'toast show toast-' + type;
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(hideToast, 6000);
+      }
+
+      function hideToast() {
+        toast.classList.remove('show');
+        clearTimeout(toastTimer);
+      }
+
+      toastClose.addEventListener('click', hideToast);
+      // Pause the auto-dismiss timer while someone's reading or has it focused.
+      toast.addEventListener('mouseenter', () => clearTimeout(toastTimer));
+      toast.addEventListener('mouseleave', () => { toastTimer = setTimeout(hideToast, 3000); });
+      toast.addEventListener('focusin', () => clearTimeout(toastTimer));
+      toast.addEventListener('focusout', () => { toastTimer = setTimeout(hideToast, 3000); });
+
+      const fields = {
+        name: {
+          el: document.getElementById('name'),
+          validate: (value) => {
+            if (value.trim().length === 0) return 'Enter your full name.';
+            if (value.trim().length < 2) return 'That name looks too short.';
+            return '';
+          }
+        },
+        email: {
+          el: document.getElementById('email'),
+          validate: (value) => {
+            if (value.trim().length === 0) return 'Enter your email address.';
+            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!pattern.test(value.trim())) return 'Enter a valid email address, like name@example.com.';
+            return '';
+          }
+        },
+        message: {
+          el: document.getElementById('message'),
+          validate: (value) => {
+            if (value.trim().length === 0) return 'Enter a message.';
+            if (value.trim().length < 10) return 'Say a bit more — at least 10 characters.';
+            return '';
+          }
+        }
+      };
+
+      function setFieldError(name, message) {
+        const { el } = fields[name];
+        const errorEl = document.getElementById(name + '-error');
+        if (message) {
+          errorEl.textContent = message;
+          el.classList.add('has-error');
+          el.setAttribute('aria-invalid', 'true');
+        } else {
+          errorEl.textContent = '';
+          el.classList.remove('has-error');
+          el.removeAttribute('aria-invalid');
+        }
+      }
+
+      function validateField(name) {
+        const { el, validate } = fields[name];
+        const message = validate(el.value);
+        setFieldError(name, message);
+        return message === '';
+      }
+
+      Object.keys(fields).forEach((name) => {
+        const { el } = fields[name];
+        el.addEventListener('blur', () => validateField(name));
+        el.addEventListener('input', () => {
+          // Once a field has an error showing, re-check on every keystroke
+          // so the message clears as soon as the person fixes it.
+          if (el.classList.contains('has-error')) validateField(name);
+        });
+      });
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const results = Object.keys(fields).map(validateField);
+        const isValid = results.every(Boolean);
+
+        if (!isValid) {
+          showToast('Please fix the highlighted fields before sending.', 'error');
+          const firstInvalidName = Object.keys(fields).find(
+            (name) => !fields[name].el.checkValidity || fields[name].el.classList.contains('has-error')
+          );
+          if (firstInvalidName) fields[firstInvalidName].el.focus();
+          return;
+        }
+
+        // No backend is wired up on this static page. In production, this is
+        // where you'd send the data, e.g.:
+        //   fetch('/api/contact', { method: 'POST', body: new FormData(form) })
+        //     .then(handle real success/failure here)
+        // For now we simulate a successful send so the interaction is complete.
+        showToast('Thanks — your message has been sent. Admissions will follow up within two business days.', 'success');
+        form.reset();
+        Object.keys(fields).forEach((name) => setFieldError(name, ''));
+      });
+    })();
+  </script>
+
+</body>
+</html>
