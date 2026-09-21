@@ -1,0 +1,88 @@
+.buffer{
+    height: 15px;
+    color: grey;
+    background-color: rgb(183, 243, 224);
+}
+ 
+div{
+    padding: 8px;
+    margin: 4px;
+    color: white;
+}
+
+.parent{
+    position: relative;
+    background: lightgray;
+    height: 150px;
+}
+
+.box1{
+    position: static;
+    background: silver;
+}
+
+.box2{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    background: gold;
+}
+
+.box3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: tomato;
+}
+
+.scroll{
+    height: 200px;
+    overflow-y: auto;
+}
+
+.box4{
+    position: sticky;
+    top: 0;
+    background: mediumaquamarine;
+}
+
+.extra-height{
+    height: 800px;
+    background-color: rgb(146, 187, 209);
+}
+
+.box5{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: deepskyblue;
+}
+
+.boxes{
+    border: 5px solid gray;
+    display: inline-block;
+    background: rgb(36, 35, 35);
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 5px 5px 10px rgb(130, 114, 114),
+                5px 5px 10px rgb(130, 114, 114);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 20px;
+}
+
+.box-one{
+    background: rgb(217, 76, 51);
+}
+
+.box-two{
+    background: rgb(223, 243, 72);
+}
+
+.box-three{
+    background: rgb(32, 105, 44);
+}

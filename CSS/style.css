@@ -1,0 +1,33 @@
+h1{
+    color: white;
+    text-shadow: 0 0 10px #6f34cc, 0 0 20px #4f2af5;
+}
+    
+body{
+    /* direction gradient */
+    /* background: linear-gradient(to bottom right, rgb(199, 110, 43),rgb(56, 56, 241)); */
+    /* radial circle gradient */
+    /* background: radial-gradient(circle, yellow, white); */
+    /* radial ellipse (default) gradient */
+    /* background: radial-gradient(yellow, white); */
+    /* conic gradient */
+    /* background: conic-gradient(green, yellow, red, blue);   
+    background-repeat: no-repeat; */
+    /* background-size: cover;
+    min-height: 100vh;         */
+    margin: 0
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    /* background: #00000063; */
+    box-shadow: inset 0 1px 2px rgba(3, 3, 255, 0.9),
+                0 2px 4px rgba(183, 25, 25, 0.15);
+
+}
+/* 
+#products{
+    color: rgb(130, 203, 85);
+} */
